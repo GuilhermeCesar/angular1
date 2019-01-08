@@ -11,3 +11,13 @@ angular.module('minhasDiretivas',[])
     ddo.templateUrl = 'js/directives/meu-painel.html';
     return ddo;
 });
+
+// angular.module("minhasDiretivas",[]).directive("minhaFoto",()=>{
+//     let ddo = {
+//         restrict:"AE"
+//     }
+//
+//     ddo.score =  {
+//
+//     }
+// })

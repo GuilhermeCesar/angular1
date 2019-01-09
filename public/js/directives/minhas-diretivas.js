@@ -12,12 +12,20 @@ angular.module('minhasDiretivas',[])
     return ddo;
 });
 
-// angular.module("minhasDiretivas",[]).directive("minhaFoto",()=>{
-//     let ddo = {
-//         restrict:"AE"
-//     }
-//
-//     ddo.score =  {
-//
-//     }
-// })
+angular.module("minhasDiretivas").directive("minhaFoto",function(){
+    var ddo = {
+        restrict:"AE"
+    }
+
+    ddo.scope =  {
+        url:'@',
+        titulo:'@'
+    }
+
+    ddo.template = `<img class="img-responsive center-block"
+                        ng-src="{{url}}"
+                        alt="{{titulo}}">`;
+
+
+    return ddo;
+})

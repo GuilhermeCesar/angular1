@@ -15,6 +15,7 @@ angular.module('alurapic',
 
     $routeProvider.when('/fotos/new',{
         templateUrl:'partials/fotos.html',
+        controller:'FotoController'
     });
 
     $routeProvider.otherwise({

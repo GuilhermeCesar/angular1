@@ -14,7 +14,7 @@ angular.module('alurapic',
    });
 
     $routeProvider.when('/fotos/new',{
-        templateUrl:'partials/fotos.html',
+        templateUrl:'partials/foto.html',
         controller:'FotoController'
     });
 

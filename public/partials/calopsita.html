@@ -1,0 +1,9 @@
+<form name="calopsita">
+    <h1>Form calopsita</h1>
+    <input name="nome" ng-model="passaro.nome" required ng-maxlength="20">
+    <!-- mensagem de erro obrigatório aqui -->
+    <span ng-show="calopsita.nome.$error.required">Campo obrigatório</span>
+    <span ng-show="calopsita.nome.$error.maxlength">Você só pode ter no maximo 20 caacteres</span>
+
+    <!-- mensagem de erro tamanho aqui -->
+</form>

@@ -18,6 +18,10 @@ angular.module('alurapic',
         controller:'FotoController'
     });
 
+    $routeProvider.when('/calopsita',{
+        templateUrl:'partials/calopsita.html',
+    });
+
     $routeProvider.otherwise({
         redirectTo:'/fotos'
     })

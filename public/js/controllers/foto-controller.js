@@ -30,7 +30,7 @@ angular.module('alurapic').controller('FotoController',function ($scope, $http,$
 						console.log('Sucesso');
 						$scope.foto = {};
 						$scope.mensagem = 'Foto cadastrada com sucesso';
-						console.log($scope.mensagem.length);
+						$scope.formulario.$setPristine();
 					})
 					.error(function (error) {
 						$scope.mensagem = "Não foi possivel adicionar a foto"
